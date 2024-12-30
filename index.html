@@ -10,11 +10,11 @@
     <li><a>ham-nico-nico</a></li>
     <li><a>ham-nico-comments</a></li>
 </ul>
-<button onclick="testFetch()">test</button>
+<button onclick="testFetch()">testFetch</button>
 <iframe></iframe>
 <script>
     function testFetch() {
-        fetch('https://dissidiadb-cbde0.appspot.com.storage.googleapis.com/hbr/styles.json').then(it => console.warn(it))
+        fetch('https://dissidiadb-cbde0.appspot.com.storage.googleapis.com/hbr/styles.json', {mode: 'cors'}).then(it => console.warn(it))
     }
 </script>
 </body>
